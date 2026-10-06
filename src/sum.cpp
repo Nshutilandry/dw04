@@ -1,13 +1,13 @@
 // src/sum.cpp
-
 #include "sum.h"
+#include <vector>
 
-int sum( const std::vector<int>& nums ) {
-    int sum;
+using std::vector;
 
-    for( auto i{0}; i < nums.size(); i++ ) {
-        sum += nums.at(i);
+int sum(const vector<int>& nums) {
+    int total = 0;
+    for (int num : nums) {
+        total += num;
     }
-
-    return sum;
+    return total;
 }
